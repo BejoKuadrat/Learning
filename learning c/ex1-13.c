@@ -2,7 +2,8 @@
 
 #define IN 1
 #define OUT 0
-#define MAX 45
+#define MAX 45 
+// IN and OUT is a state whether the program is currently inside a word or not, MAX is the maximum number or words that can be found in the dictionary
 
 main(){
 	int c, ws, wd, state;
@@ -23,7 +24,7 @@ main(){
 			state = OUT;
 			if (length < MAX){
 				if (length > maxlen)
-					maxlen = length;
+					maxlen = length; // adds a limiter to how long the max word will be printed out, better solution than just printing out the whole array
 				++array[length];
 			}
 			length = 0;
