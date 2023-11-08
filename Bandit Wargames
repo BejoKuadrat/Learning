@@ -1,0 +1,70 @@
+level 0
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+level 1  
+rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+
+level 2 
+aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+
+level 3
+2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe
+
+level 4
+lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+
+level 5
+find -size 1033c ! -executable
+P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+
+level 6
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
+
+level 7
+cat data.txt | grep millionth
+TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+
+level 8
+sort data.txt | uniq -c
+EN632PlfYiZbn3PhVK3XOGSlNInNE00t
+
+level 9
+strings data.txt | grep =
+G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+
+level 10
+base64 -d data.txt
+6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+
+level 11
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+
+level 12
+step
+	1. copy the files to /tmp/<your directory>
+	2. xxd -r data.txt > <your file>
+	3. check the file type with "file"
+	4. use the corresponding compression format to decompress
+	5. gzip can't understand shit without .gz, so append them first with mv
+wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+
+level 13
+ssh bandit14@bandit.labs.overthewire.org -p 2220 -i sshkey.private
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+
+level 14
+echo "fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq" | nc localhost 30000
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+
+level 15
+echo 'jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt' | openssl s_client -connect localhost:30001 -ign_eof
+	!!! Note to self, "talk to server" is basically echoing what you need to send !!!
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
+level 16
+nmap -sV -p 31000-32000 localhost
+	the scan would took a while
+echo 'JQttfApK4SeyHwDlI9SXGR50qclOAil1' | openssl s_client -connect localhost:<port without echo> -ign_eof
+ssh bandit17@bandit.labs.overthewire.org -p 2220 -i <bandit17 private RSA key>
