@@ -106,6 +106,10 @@ cp <your script.sh> <location from the cronjob>
 VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar
 
 level 24
-for i in {0000..9999}; do echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i"; done > var
-cat var | nc localhosts 30002 > answer
-cat answer | grep -v Wrong
+for i in {0000..5000}; do echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i"; done > var1
+for i in {5000..9999}; do echo "VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar $i"; done > var2
+cat var1/var2 | nc localhosts 30002 > answer1/answer2
+cat answer1/answer2 | grep -v Wrong
+p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d
+
+level 25
